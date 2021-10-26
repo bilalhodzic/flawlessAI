@@ -6,7 +6,7 @@ const LayoutDefault = ({ children }) => (
   <>
     <Header navPosition="center" hideSignin className="reveal-from-bottom" />
     <main className="site-content">{children}</main>
-    <Footer />
+    <Footer className="mt-16" />
   </>
 );
 

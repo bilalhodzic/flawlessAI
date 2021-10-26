@@ -112,9 +112,7 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <Link to="#0" onClick={closeMenu}>
-                        Features
-                      </Link>
+                      <Link to="#features">Features</Link>
                     </li>
                   </ul>
                   <ul
@@ -148,7 +146,7 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <Link to="#0" onClick={closeMenu}>
+                      <Link to="#contact" onClick={closeMenu}>
                         Contact
                       </Link>
                     </li>
