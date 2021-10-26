@@ -1,16 +1,16 @@
-import React from 'react';
-import classNames from 'classnames';
-import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
-import Image from '../elements/Image';
+import React from "react";
+import classNames from "classnames";
+import { SectionTilesProps } from "../../utils/SectionProps";
+import SectionHeader from "./partials/SectionHeader";
+import Image from "../elements/Image";
 
 const propTypes = {
-  ...SectionTilesProps.types
-}
+  ...SectionTilesProps.types,
+};
 
 const defaultProps = {
-  ...SectionTilesProps.defaults
-}
+  ...SectionTilesProps.defaults,
+};
 const FeaturesTiles = ({
   className,
   topOuterDivider,
@@ -22,180 +22,199 @@ const FeaturesTiles = ({
   pushLeft,
   ...props
 }) => {
-
   const outerClasses = classNames(
-    'features-tiles section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
+    "features-tiles section",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
     className
   );
 
   const innerClasses = classNames(
-    'features-tiles-inner section-inner pt-0',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider'
+    "features-tiles-inner section-inner pt-0",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
   );
 
   const tilesClasses = classNames(
-    'tiles-wrap center-content',
-    pushLeft && 'push-left'
+    "tiles-wrap center-content",
+    pushLeft && "push-left"
   );
 
   const sectionHeader = {
-    title: 'Build up the whole picture',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: "Build up the whole picture",
+    paragraph:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
   };
 
   return (
-    <section
-      {...props}
-      className={outerClasses}
-    >
+    <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
-
+            {/* Document automation */}
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-01.svg')}
+                      src={require("./../../assets/images/feature-document.png")}
                       alt="Features tile icon 01"
-                      width={64}
-                      height={64} />
+                      width={24}
+                      height={34}
+                      style={{ height: "24px" }}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Document automation</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Customization, Conveinince, performance and price are just
+                    some of the reasons for document automation.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+            {/* COntract review */}
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="200"
+            >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
+                      src={require("./../../assets/images/feature-contract.png")}
                       alt="Features tile icon 02"
-                      width={64}
-                      height={64} />
+                      width={24}
+                      height={34}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Contract negotiation and review</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Risk Reduction while signing contracts could be very useful
+                    for everone.{" "}
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+            {/* Legal Analytics */}
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="400"
+            >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-03.svg')}
+                      src={require("./../../assets/images/feature-analytics.png")}
                       alt="Features tile icon 03"
-                      width={64}
-                      height={64} />
+                      width={34}
+                      height={34}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Legal Analytics</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Accessibility to research easier and get result can save
+                    your time
+                  </p>
                 </div>
               </div>
             </div>
 
+            {/* Robot asistant */}
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-04.svg')}
+                      src={require("./../../assets/images/feature-robot.png")}
                       alt="Features tile icon 04"
-                      width={64}
-                      height={64} />
+                      width={34}
+                      height={34}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Robot asistant</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+            {/* Monitoring, managment */}
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="200"
+            >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-05.svg')}
+                      src={require("./../../assets/images/feature-managment.png")}
                       alt="Features tile icon 05"
-                      width={64}
-                      height={64} />
+                      width={34}
+                      height={34}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                    Monitoring, filing and managment
+                  </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+            {/* Deals managment */}
+            <div
+              className="tiles-item reveal-from-bottom"
+              data-reveal-delay="400"
+            >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-06.svg')}
+                      src={require("./../../assets/images/features-deals.png")}
                       alt="Features tile icon 06"
-                      width={64}
-                      height={64} />
+                      width={34}
+                      height={34}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Deals managment</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat.
+                  </p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 FeaturesTiles.propTypes = propTypes;
 FeaturesTiles.defaultProps = defaultProps;
