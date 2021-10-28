@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Link } from "react-router-dom";
+import { HashRouter, Link } from "react-router-dom";
 import Logo from "./partials/Logo";
 
 const propTypes = {
@@ -112,7 +112,7 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <Link to="#features">Features</Link>
+                      <a href="#features">Features</a>
                     </li>
                   </ul>
                   <ul
@@ -122,9 +122,7 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <Link to="#0" onClick={closeMenu}>
-                        Research
-                      </Link>
+                      <a href="#research">Research</a>
                     </li>
                   </ul>
                   <ul
@@ -134,9 +132,7 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <Link to="#0" onClick={closeMenu}>
-                        Team
-                      </Link>
+                      <a href="#team">Team</a>
                     </li>
                   </ul>{" "}
                   <ul
@@ -146,9 +142,7 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <Link to="#contact" onClick={closeMenu}>
-                        Contact
-                      </Link>
+                      <a href="#contact">Contact</a>
                     </li>
                   </ul>
                   {!hideSignin && (

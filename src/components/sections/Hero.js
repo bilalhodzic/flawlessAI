@@ -76,45 +76,51 @@ const Hero = ({
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button
-                    tag="a"
+                    //tag="a"
                     color="primary"
                     wideMobile
-                    href="https://cruip.com/"
+                    //href="https://cruip.com/"
                   >
-                    Get started
+                    Get started for free
                   </Button>
                   <Button
                     tag="a"
                     color="dark"
                     wideMobile
-                    href="https://github.com/cruip/open-react-template/"
+                    //href="https://github.com/cruip/open-react-template/"
+                    onClick={openModal}
                   >
-                    View on Github
+                    View Demo
                   </Button>
                 </ButtonGroup>
               </div>
             </div>
           </div>
-          {/* <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
+          <div
+            className="hero-figure reveal-from-bottom illustration-element-01"
+            data-reveal-value="20px"
+            data-reveal-delay="800"
+          >
             <a
-              data-video="https://player.vimeo.com/video/174002812"
+              data-video="./demo.mp4"
               href="#0"
               aria-controls="video-modal"
               onClick={openModal}
             >
               <Image
                 className="has-shadow"
-                src={require('./../../assets/images/video-placeholder.jpg')}
+                src={require("./../../assets/images/demo-placeholder.jpg")}
                 alt="Hero"
                 width={896}
-                height={504} />
+                height={504}
+              />
             </a>
-          </div> */}
+          </div>
           <Modal
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
-            video="https://player.vimeo.com/video/174002812"
+            video="https://drive.google.com/file/d/1ipWSlvUsjZOD55UGZ7lzP4-InOCEnIR2/view?usp=sharing"
             videoTag="iframe"
           />
         </div>

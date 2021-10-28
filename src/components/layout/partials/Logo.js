@@ -9,14 +9,14 @@ const Logo = ({ className, ...props }) => {
   return (
     <div {...props} className={classes}>
       <h1 className="m-0">
-        <Link to="/">
+        <a href="/#">
           <Image
             src={require("./../../../assets/images/LogoWhite.png")}
             alt="Open"
             width={60}
             height={60}
           />
-        </Link>
+        </a>
       </h1>
     </div>
   );

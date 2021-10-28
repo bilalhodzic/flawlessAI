@@ -17,10 +17,11 @@ const Home = () => {
         topDivider
         imageFill
         className="illustration-section-02"
+        id="research"
       />
-      <Team topDivider />
+      <Team topDivider id="team" />
       <Testimonial topDivider />
-      <Cta split />
+      <Cta split invertColor id="contact" />
     </>
   );
 };
