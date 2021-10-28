@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/flawlessAI/precache-manifest.a3513bf335c1916053119b385eb8cd8d.js"
+  "/flawlessAI/precache-manifest.07c6192962c799fb010e2fc18baf90b9.js"
 );
 
 self.addEventListener('message', (event) => {

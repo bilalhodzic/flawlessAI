@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "32214571b2ac584589d5d2f7feaf0aad",
+    "revision": "f1549ab9bb57d9a82e3dc0a90495765d",
     "url": "/flawlessAI/index.html"
   },
   {
