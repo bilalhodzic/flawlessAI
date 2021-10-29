@@ -103,14 +103,21 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  Main improvements
                 </div>
-                <h3 className="mt-0 mb-12">Data-driven insights</h3>
+                <h3 className="mt-0 mb-12">Key insights from our solution</h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Employment contracts, consumer protection, intelectual
+                  property are just some of the advantages of using our product.
+                  You can read more of all informations on our{" "}
+                  <a
+                    href={require("./../../assets/docs/infografik.pdf")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    infographic
+                  </a>
+                  .
                 </p>
               </div>
               <div
@@ -121,15 +128,16 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require("./../../assets/images/features-split-image-02.png")}
-                  alt="Features split 02"
+                  src={require("./../../assets/images/infografik-keys.png")}
+                  alt="infografik keys"
                   width={528}
                   height={396}
                 />
+                {/* <IconDiv src={require("./../../assets/images/map.png")} /> */}
               </div>
             </div>
 
-            <div className="split-item">
+            {/* <div className="split-item">
               <div
                 className="split-item-content center-content-mobile reveal-from-left"
                 data-reveal-container=".split-item"
@@ -159,7 +167,7 @@ const FeaturesSplit = ({
                   height={396}
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -177,6 +185,19 @@ const ColorDot = ({ color, width = 12, marginLeft = 0 }) => (
       marginLeft: marginLeft,
     }}
   />
+);
+const IconDiv = ({ src, heading = "", body = "" }) => (
+  <div
+    style={{
+      height: "5rem",
+      width: "auto",
+      borderRadius: "10%",
+      backgroundColor: "#2c2e32",
+      // display: "inline-flex",
+    }}
+  >
+    <Image src={src} alt="Features split 01" width={28} height={36} />
+  </div>
 );
 
 FeaturesSplit.propTypes = propTypes;
