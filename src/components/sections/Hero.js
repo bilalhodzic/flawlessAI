@@ -120,7 +120,7 @@ const Hero = ({
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
-            video="https://drive.google.com/file/d/1ipWSlvUsjZOD55UGZ7lzP4-InOCEnIR2/view?usp=sharing"
+            video="https://drive.google.com/file/d/1ipWSlvUsjZOD55UGZ7lzP4-InOCEnIR2/preview"
             videoTag="iframe"
           />
         </div>

@@ -78,6 +78,7 @@ const Modal = ({
                     src={video}
                     frameBorder="0"
                     allowFullScreen
+                    allow="autoplay"
                   ></iframe>
                 ) : (
                   <video
