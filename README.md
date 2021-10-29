@@ -1,5 +1,5 @@
 ### Demo
-see live demo  [http://bilalhodzic.github.io/flawlessAI](http://bilalhodzic.github.io/flawlessAI)
+see live demo  [https://flawlessai.herokuapp.com/](https://flawlessai.herokuapp.com/)
 
 ### Available Scripts
 
