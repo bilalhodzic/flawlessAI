@@ -2,7 +2,7 @@
   "name": "flawless-ai",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bilalhodzic.github.io/flawlessAI",
+  //"homepage": "http://bilalhodzic.github.io/flawlessAI",
   "dependencies": {
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
