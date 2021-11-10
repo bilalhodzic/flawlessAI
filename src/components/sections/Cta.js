@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import Input from "../elements/Input";
+import Button from "../elements/Button";
+import { send } from "emailjs-com";
 
 const propTypes = {
   ...SectionProps.types,
@@ -40,30 +42,113 @@ const Cta = ({
     bottomDivider && "has-bottom-divider",
     split && "cta-split"
   );
+  const [contactData, setcontactData] = React.useState({
+    name: "",
+    email: "",
+  });
+  const [contactError, setcontactError] = React.useState({
+    name: "",
+    email: "",
+  });
+  const [messageSent, setmessageSent] = React.useState(false);
+  const [messageText, setmessageText] = React.useState("");
+
+  const onDataChange = (e) => {
+    setcontactData({ ...contactData, [e.target.id]: e.target.value });
+  };
+
+  //regex validation of email
+  function validateEmail(email) {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  const handleSubmit = async () => {
+    //first check if the data is correct
+    let errors = contactError;
+    let valid = true;
+    if (contactData.name === undefined || contactData.name === "") {
+      errors.name = "Name is required";
+      valid = false;
+    } else {
+      errors.name = "";
+    }
+    if (!validateEmail(contactData.email)) {
+      errors.email = "Email format is not correct";
+      valid = false;
+    } else {
+      errors.email = "";
+    }
+
+    setcontactError({ name: errors.name, email: errors.email });
+
+    if (valid) {
+      send(
+        "service_vgyphh6",
+        "template_1t6weql",
+        contactData,
+        "user_ur9FdFTmuF1hNA1S8sLp6"
+      )
+        .then((response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setmessageSent(true);
+          setmessageText(
+            "Message succesfully sent! We will get back to you soon"
+          );
+        })
+        .catch((err) => {
+          console.log("FAILED...", err);
+          setmessageSent(true);
+          setmessageText("Sorry, there was an error. Please try again.");
+        });
+    }
+  };
 
   return (
     <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
           <div className="cta-slogan">
-            <h3 className="m-0">Have more questions?</h3>
+            <h3 className="m-0">Want to get early access to our product?</h3>
+            <h4 className="m-0">Leave your name and email here!</h4>
           </div>
           <div className="cta-action">
-            <Input
-              id="newsletter"
-              type="email"
-              label="Subscribe"
-              labelHidden
-              hasIcon="right"
-              placeholder="Your best email"
-            >
-              <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z"
-                  fill="#376DF9"
+            {messageSent ? (
+              <span>{messageText}</span>
+            ) : (
+              <>
+                <Input
+                  id="name"
+                  type="text"
+                  label="Name"
+                  labelHidden
+                  placeholder="Your name"
+                  value={contactData.name}
+                  hint={contactError.name}
+                  status={"error"}
+                  onChange={onDataChange}
                 />
-              </svg>
-            </Input>
+                <br />
+                <Input
+                  id="email"
+                  type="email"
+                  label="Subscribe"
+                  labelHidden
+                  hasIcon="right"
+                  placeholder="Your best email"
+                  value={contactData.email}
+                  status={"error"}
+                  hint={contactError.email}
+                  onChange={onDataChange}
+                ></Input>
+                <br />
+                <Button color="yellow" wide onClick={handleSubmit}>
+                  {" "}
+                  Send
+                </Button>
+              </>
+            )}
           </div>
         </div>
       </div>
