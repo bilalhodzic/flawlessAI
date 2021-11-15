@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { Link } from "react-router-dom";
+import { Link } from "next/link";
 import Image from "../../elements/Image";
 
 const Logo = ({ className, ...props }) => {
