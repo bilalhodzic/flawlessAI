@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
+import { strings } from "../../utils/localization";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -40,8 +41,8 @@ const Testimonial = ({
   const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left");
 
   const sectionHeader = {
-    title: "Customer testimonials",
-    paragraph: "Here are some customer testimonial for our product.",
+    title: strings.blockTitle4,
+    paragraph: strings.blockParagpraph4,
   };
 
   return (
@@ -56,14 +57,11 @@ const Testimonial = ({
             >
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — I would use an application that is based on artificial
-                    intelligence, of course, if it were on the market
-                  </p>
+                  <p className="text-sm mb-0">{strings.testimonialBody1}</p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
                   <span className="testimonial-item-name text-color-high">
-                    Blitva Jela
+                    {strings.testimonialName1}
                   </span>
                   {/* <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
@@ -76,15 +74,11 @@ const Testimonial = ({
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — You have no idea how much backed-up cases there are.
-                    Cutting down on the time required on case by case basis
-                    would allow us to put many cases off the waiting list.
-                  </p>
+                  <p className="text-sm mb-0">{strings.testimonialBody2}</p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
                   <span className="testimonial-item-name text-color-high">
-                    Zdravko Dren
+                    {strings.testimonialName2}
                   </span>
                   {/* <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
@@ -100,14 +94,11 @@ const Testimonial = ({
             >
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — Definitely. I would be the first to use it for my legal
-                    advices, if it could actually help me.
-                  </p>
+                  <p className="text-sm mb-0">{strings.testimonialBody3}</p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
                   <span className="testimonial-item-name text-color-high">
-                    Mačkić Ale
+                    {strings.testimonialName3}
                   </span>
                   {/* <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">

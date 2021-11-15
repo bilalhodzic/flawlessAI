@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
+import { strings } from "../../utils/localization";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -43,7 +44,8 @@ const Team = ({
   );
 
   const sectionHeader = {
-    title: "Team",
+    title: strings.blockTitle3,
+    paragraph: strings.blockParagpraph3,
   };
 
   return (
@@ -69,8 +71,8 @@ const Team = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Faruk Gutic</h4>
-                  <p className="m-0 text-sm">Human resources</p>
+                  <h4 className="mt-0 mb-8">{strings.TeamFarukIme}</h4>
+                  <p className="m-0 text-sm">{strings.TeamFarukOpis}</p>
                 </div>
               </div>
             </div>
@@ -96,8 +98,8 @@ const Team = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Sinisa Milosevic</h4>
-                  <p className="m-0 text-sm">Chief Operating Officer</p>
+                  <h4 className="mt-0 mb-8">{strings.TeamSinisaIme}</h4>
+                  <p className="m-0 text-sm">{strings.TeamSinisaOpis}</p>
                 </div>
               </div>
             </div>
@@ -122,8 +124,8 @@ const Team = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Dalibor Vujovic</h4>
-                  <p className="m-0 text-sm">Chief Executive Officer</p>
+                  <h4 className="mt-0 mb-8">{strings.TeamDaliborIme}</h4>
+                  <p className="m-0 text-sm">{strings.TeamDaliborOpis}</p>
                 </div>
               </div>
             </div>
@@ -145,8 +147,8 @@ const Team = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Enis Habul</h4>
-                  <p className="m-0 text-sm">CHief Technology officer</p>
+                  <h4 className="mt-0 mb-8">{strings.TeamEnisIme}</h4>
+                  <p className="m-0 text-sm">{strings.TeamEnisOpis}</p>
                 </div>
               </div>
             </div>
@@ -171,8 +173,8 @@ const Team = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Bilal Hodzic</h4>
-                  <p className="m-0 text-sm">Tech lead</p>
+                  <h4 className="mt-0 mb-8">{strings.TeamBilalIme}</h4>
+                  <p className="m-0 text-sm">{strings.TeamBilalOpis}</p>
                 </div>
               </div>
             </div>

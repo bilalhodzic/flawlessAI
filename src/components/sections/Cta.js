@@ -5,6 +5,7 @@ import { SectionProps } from "../../utils/SectionProps";
 import Input from "../elements/Input";
 import Button from "../elements/Button";
 import { send } from "emailjs-com";
+import { strings } from "../../utils/localization";
 
 const propTypes = {
   ...SectionProps.types,
@@ -69,13 +70,13 @@ const Cta = ({
     let errors = contactError;
     let valid = true;
     if (contactData.name === undefined || contactData.name === "") {
-      errors.name = "Name is required";
+      errors.name = strings.inputErrorName;
       valid = false;
     } else {
       errors.name = "";
     }
     if (!validateEmail(contactData.email)) {
-      errors.email = "Email format is not correct";
+      errors.email = strings.inputErrorEmail;
       valid = false;
     } else {
       errors.email = "";
@@ -93,14 +94,12 @@ const Cta = ({
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
           setmessageSent(true);
-          setmessageText(
-            "Message succesfully sent! We will get back to you soon"
-          );
+          setmessageText(strings.contactSuccessMessage);
         })
         .catch((err) => {
           console.log("FAILED...", err);
           setmessageSent(true);
-          setmessageText("Sorry, there was an error. Please try again.");
+          setmessageText(strings.contactFailedMessage);
         });
     }
   };
@@ -110,8 +109,8 @@ const Cta = ({
       <div className="container">
         <div className={innerClasses}>
           <div className="cta-slogan">
-            <h3 className="m-0">Want to get early access to our product?</h3>
-            <h4 className="m-0">Leave your name and email here!</h4>
+            <h3 className="m-0">{strings.contactTitle}</h3>
+            <h4 className="m-0">{strings.contactSubtitle}</h4>
           </div>
           <div className="cta-action">
             {messageSent ? (
@@ -123,7 +122,7 @@ const Cta = ({
                   type="text"
                   label="Name"
                   labelHidden
-                  placeholder="Your name"
+                  placeholder={strings.contactPlaceholderName}
                   value={contactData.name}
                   hint={contactError.name}
                   status={"error"}
@@ -136,7 +135,7 @@ const Cta = ({
                   label="Subscribe"
                   labelHidden
                   hasIcon="right"
-                  placeholder="Your best email"
+                  placeholder={strings.contactPlaceholderEmail}
                   value={contactData.email}
                   status={"error"}
                   hint={contactError.email}
@@ -144,8 +143,7 @@ const Cta = ({
                 ></Input>
                 <br />
                 <Button color="yellow" wide onClick={handleSubmit}>
-                  {" "}
-                  Send
+                  {strings.contactButton}
                 </Button>
               </>
             )}

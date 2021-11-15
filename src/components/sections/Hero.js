@@ -80,7 +80,7 @@ const Hero = ({
                     wideMobile
                     //href="https://cruip.com/"
                   >
-                    Get started for free
+                    {strings.heroButton1}
                   </Button>
                   <Button
                     tag="a"
@@ -89,7 +89,7 @@ const Hero = ({
                     //href="https://github.com/cruip/open-react-template/"
                     onClick={openModal}
                   >
-                    View Demo
+                    {strings.heroButton2}
                   </Button>
                 </ButtonGroup>
               </div>

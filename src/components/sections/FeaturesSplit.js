@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { SectionSplitProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
+import { strings } from "../../utils/localization";
 
 const propTypes = {
   ...SectionSplitProps.types,
@@ -49,9 +50,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: "Our research",
-    paragraph:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+    title: strings.blockTitle2,
+    paragraph: strings.blockParagpraph2,
   };
 
   return (
@@ -66,19 +66,16 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Heatmap
+                  {strings.researchItem1Key}
                 </div>
-                <h3 className="mt-0 mb-12">AI software market </h3>
-                <p className="m-0">
-                  It is known that AI industry will continue it's growth in
-                  every possible industry. On the map you can see the growth
-                  rate by region from 2020-2025 for AI software market in legal
-                  industry.
-                </p>
+                <h3 className="mt-0 mb-12"> {strings.researchItem1Title} </h3>
+                <p className="m-0">{strings.researchItem1Body}</p>
                 <p style={{ fontSize: "0.8rem" }}>
-                  <ColorDot color="#ffab40" /> - Low{"  "}
-                  <ColorDot color="#78909C" marginLeft="1rem" /> - Mid{"  "}
-                  <ColorDot color="#85d5e6" marginLeft="1rem" /> - High
+                  <ColorDot color="#ffab40" /> {strings.researchItem1Dot1}
+                  <ColorDot color="#78909C" marginLeft="1rem" />{" "}
+                  {strings.researchItem1Dot2}
+                  <ColorDot color="#85d5e6" marginLeft="1rem" />{" "}
+                  {strings.researchItem1Dot2}
                 </p>
               </div>
               <div
@@ -103,13 +100,11 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Main improvements
+                  {strings.researchItem2Key}
                 </div>
-                <h3 className="mt-0 mb-12">Key insights from our solution</h3>
+                <h3 className="mt-0 mb-12">{strings.researchItem2Title}</h3>
                 <p className="m-0">
-                  Employment contracts, consumer protection, intelectual
-                  property are just some of the advantages of using our product.
-                  You can read more of all informations on our{" "}
+                  {strings.researchItem2Body}{" "}
                   <a
                     href={require("./../../assets/docs/infografik.pdf")}
                     target="_blank"
