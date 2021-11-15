@@ -5,6 +5,7 @@ import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
 import Image from "../elements/Image";
 import Modal from "../elements/Modal";
+import { strings } from "../../utils/localization";
 
 const propTypes = {
   ...SectionProps.types,
@@ -69,9 +70,7 @@ const Hero = ({
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                Flawless Ai is driven to create Artificial Intelligence
-                solutions that provide high quality legal services for both SMEs
-                and Individuals
+                {strings.heroSubTitle}
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>

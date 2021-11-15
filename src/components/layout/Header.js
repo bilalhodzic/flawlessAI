@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { HashRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "./partials/Logo";
 
 const propTypes = {
@@ -27,6 +27,9 @@ const Header = ({
   hideSignin,
   bottomOuterDivider,
   bottomDivider,
+  language,
+  setLanguage,
+  strings,
   ...props
 }) => {
   const [isActive, setIsactive] = useState(false);
@@ -112,7 +115,7 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <a href="#features">Features</a>
+                      <a href="#features">{strings.headerFeatures}</a>
                     </li>
                   </ul>
                   <ul
@@ -122,7 +125,7 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <a href="#research">Research</a>
+                      <a href="#research">{strings.headerResearch}</a>
                     </li>
                   </ul>
                   <ul
@@ -132,7 +135,7 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <a href="#team">Team</a>
+                      <a href="#team">{strings.headerTeam}</a>
                     </li>
                   </ul>{" "}
                   <ul
@@ -142,7 +145,7 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <a href="#contact">Contact</a>
+                      <a href="#contact">{strings.headerContact}</a>
                     </li>
                   </ul>
                   {!hideSignin && (
@@ -158,6 +161,19 @@ const Header = ({
                       </li>
                     </ul>
                   )}
+                  <ul className="list-reset header-nav-right">
+                    <li>
+                      <Link
+                        to="#"
+                        className="button button-primary button-wide-mobile button-sm"
+                        onClick={() =>
+                          setLanguage(language === "en" ? "bh" : "en")
+                        }
+                      >
+                        {language === "en" ? "En" : "Bh"}
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               </nav>
             </>

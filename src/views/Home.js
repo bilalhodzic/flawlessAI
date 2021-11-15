@@ -7,7 +7,7 @@ import Testimonial from "../components/sections/Testimonial";
 import Cta from "../components/sections/Cta";
 import Team from "../components/sections/Team";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <>
       <Hero className="illustration-section-01" />
