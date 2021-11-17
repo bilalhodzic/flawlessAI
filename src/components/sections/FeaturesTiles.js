@@ -173,7 +173,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require("./../../assets/images/features-deals.png")}
+                      src={require("./../../assets/images/search.png")}
                       alt="Features tile icon 06"
                       width={34}
                       height={34}
@@ -181,7 +181,7 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Deals managment</h4>
+                  <h4 className="mt-0 mb-8">{strings.featureTitle6}</h4>
                   <p className="m-0 text-sm">{strings.featureBody6}</p>
                 </div>
               </div>

@@ -6,50 +6,43 @@ export const strings = new LocalizedStrings({
     headerContact: "Contact",
     headerTeam: "Team",
     headerResearch: "Research",
-    headerFeatures: "Features",
+    headerFeatures: "What we offer",
 
     //hero
     heroSubTitle:
-      "Flawless Ai is driven to create Artificial Intelligence solutions that provide high quality legal services for both SMEs and Individuals",
-    heroButton1: "Get started for free",
-    heroButton2: "View demo",
+      "Flawless AI assists SMEs in organizing, managing and writing legal documents",
+    heroButton1: "Try for FREE!",
+    heroButton2: "View video",
 
     //features titles
-    featureTitle: "Features we offer",
-    featureParagraph:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+    featureTitle: "What we offer",
+    featureParagraph: "",
 
     featureTitle1: "Document automation",
     featureBody1:
-      "Customization, Conveinince, performance and price are just some of the reasons for document automation.",
+      "Generate documents of your choice with minimal effort and cheap cost",
 
-    featureTitle2: "Contract negotiation and review",
+    featureTitle2: "Document analysis",
     featureBody2:
-      "Risk Reduction while signing contracts could be very useful for everone.",
+      "View and analyze important document items that will reduce the time it takes to read unnecessary text in a document.",
 
-    featureTitle3: "Legal Analytics",
+    featureTitle3: "Cloud storage",
     featureBody3:
-      "Accessibility to research easier and get result can save your time",
+      "Your documents will be stored together in a safe and one place with constant access",
 
-    featureTitle4: "Robot asistant",
-    featureBody4: `Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.`,
+    featureTitle4: "Chatbot asistant",
+    featureBody4: `Our chatbot makes it easier for you to work with documents through understandable natural communication`,
 
-    featureTitle5: "Monitoring, filing and managment",
-    featureBody5: `Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.`,
+    featureTitle5: "Managment and classification",
+    featureBody5: `Easy access to documents that are automatically categorized when generated`,
 
-    featureTitle6: "Deals managment",
-    featureBody6: `Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.`,
+    featureTitle6: "Document search",
+    featureBody6: `Through our "elastic search" we offer search through large text data in no time`,
 
     //Research block
     blockTitle2: "Our research",
-    blockParagpraph2:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+    blockParagpraph2: `According to our research, more than 30,000 small and medium-sized companies in BiH use 
+    outdated ways of managing and organizing legal documents, which leads to a waste of time, productivity and money.`,
 
     researchItem1Key: "Heatmap",
     researchItem1Title: "AI software market",
@@ -117,74 +110,72 @@ export const strings = new LocalizedStrings({
       "Message succesfully sent! We will get back to you soon",
     contactFailedMessage: "Sorry, there was an error. Please try again.",
   },
+  //---------------------------------------
+  //---------------------------------------
+  //-------BOSNIAN LANGUGAGE ---------------
+  //---------------------------------------
+  ///---------------------------------------
+
   bh: {
     //header
     headerContact: "Kontakt",
-    headerTeam: "Tim",
+    headerTeam: "Nas tim",
     headerResearch: "Istrazivanje",
-    headerFeatures: "Karakteristike",
+    headerFeatures: "Sta nudimo",
 
     //hero
     heroSubTitle:
-      "Flawless Ai pomaze malim preduzecima u organizaciju pravnih dokumenata",
-    heroButton1: "Zapocni besplatno!",
-    heroButton2: "Pogledaj demo",
+      "Flawless AI pomaze malim i srednjim preduzecima u organizaciji, upravljanu i pisanju pravnih dokumenata",
+    heroButton1: "Probaj BESPLATNO!",
+    heroButton2: "Pogledaj video",
 
     //features titles
-    featureTitle: "Sta mi nudimo",
-    featureParagraph:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+    featureTitle: "Sta nudimo?",
+    featureParagraph: "",
+
     featureTitle1: "Automatizacija dokumenata",
     featureBody1:
-      "Customization, Conveinince, performance and price are just some of the reasons for document automation.",
+      "Generisanje dokumenata po vasem izboru uz minimalan napor i jeftinu cijenu",
 
-    featureTitle2: "review dokumenta",
+    featureTitle2: "Analiza dokumenta",
     featureBody2:
-      "Risk Reduction while signing contracts could be very useful for everone.",
+      "Pregled i analiza bitnih stavki dokumenta koje ce umanjiti vrijeme citanja nepotrebnog teksta u dokumentu.",
 
-    featureTitle3: "Legalna analitika",
+    featureTitle3: "Online pohrana",
     featureBody3:
-      "Accessibility to research easier and get result can save your time",
+      "Vasi dokumenti ce zajedno biti pohranjeni na sigurnom i jednom mjestu uz stalni pristup",
 
-    featureTitle4: "Robot asistant",
-    featureBody4: `Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.`,
+    featureTitle4: "Chatbot asistent",
+    featureBody4: `Nas chatbot vam olaksava rad s dokumentima kroz razumljivu prirodnu komunikaciju`,
 
-    featureTitle5: "Monitoring i menadzment",
-    featureBody5: `Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.`,
+    featureTitle5: "Menadzment i klasifikacija",
+    featureBody5: `Olaksan pristup dokumentima koji se automatski razvrstavaju u kategorije prilikom generisanja`,
 
-    featureTitle6: "Manadzment dogovora",
-    featureBody6: `Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.`,
+    featureTitle6: "Pretrazivanje dokumenata",
+    featureBody6: `Kroz nas "elastic search" nudimo pretrazivanje velikih podataka teksta u brzom vremenu`,
 
     //Research block
-    blockTitle2: "Our research",
-    blockParagpraph2:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+    blockTitle2: "Istrazivanje",
+    blockParagpraph2: `Prema istrazivanju koje smo uradili, vise od 30 hiljada malih i 
+    srednjih kompanija u BiH koriste zastarjele nacine upravljanja i organizaje pravnih dokumenata, sto dovodi do gubitka vremena, produktivnosti i novca.`,
 
-    researchItem1Key: "Heatmap",
-    researchItem1Title: "AI software market",
-    researchItem1Body: `It is known that AI industry will continue it's growth in
-                  every possible industry. On the map you can see the growth
-                  rate by region from 2020-2025 for AI software market in legal
-                  industry.`,
-    researchItem1Dot1: `- Low `,
-    researchItem1Dot2: `- Mid `,
-    researchItem1Dot3: `- High `,
+    researchItem1Key: "Globalna karta",
+    researchItem1Title: "AI softver market",
+    researchItem1Body: `Poznato je da ce industrija umjetne intelignecije nastaviti svoj rast u svakoj postojecoj industriji.
+     Na mapi mozete vidjeti stopu rasta po regijama od 2020 - 2025 godine u pravnoj industriji.`,
+    researchItem1Dot1: `- Min `,
+    researchItem1Dot2: `- Srednje `,
+    researchItem1Dot3: `- Max `,
 
-    researchItem2Key: "Main improvements",
-    researchItem2Title: "Key insights from our solution",
-    researchItem2Body: `Employment contracts, consumer protection, intelectual
-                  property are just some of the advantages of using our product.
-                  You can read more of all informations on our`,
+    researchItem2Key: "Glavna poboljsanja",
+    researchItem2Title: "Glavne specifikacije iz naseg rjesenja",
+    researchItem2Body: `Ugovori o radu, zaštita potrošača, intelektualno vlasništvo samo su neke od prednosti korištenja našeg proizvoda.
+     Više o svim informacijama možete pročitati na nasem `,
 
     //Team block
-    blockTitle3: "Team",
-    blockParagpraph3: "",
+    blockTitle3: "Nas tim",
+    blockParagpraph3:
+      "Iako je nas tim sastavljen od ljudi s razlicitim iskustvima, to je upravo ono sto ovu ideju pokrece.",
 
     TeamFarukIme: `Faruk Gutic`,
     TeamFarukOpis: `Human resources`,
@@ -202,34 +193,36 @@ export const strings = new LocalizedStrings({
     TeamBilalOpis: `Tech Lead`,
 
     //Customer testimonials block
-    blockTitle4: "Customer testimonials",
-    blockParagpraph4: "Here are some customer testimonial for our product.",
+    blockTitle4: "Izjave korisnika",
+    blockParagpraph4: "Evo nekoliko izjava kupaca za naš proizvod",
 
-    testimonialBody1: `— I would use an application that is based on artificial
-                    intelligence, of course, if it were on the market`,
+    testimonialBody1: `— Koristio bih aplikaciju koja je bazirana na umjetnoj
+                     inteligenciji naravno, ako je na tržištu`,
     testimonialName1: "Blitva Jela",
 
-    testimonialBody2: ` — You have no idea how much backed-up cases there are.
-                    Cutting down on the time required on case by case basis
-                    would allow us to put many cases off the waiting list.`,
+    testimonialBody2: ` — Nemate pojma koliko ima istih slučajeva.
+                     Smanjenje potrebnog vremena od slučaja do slučaja
+                     bi nam omogućilo da mnoge slučajeve sklonimo sa liste čekanja.`,
     testimonialName2: "Zdravko Dren",
 
-    testimonialBody3: ` — Definitely. I would be the first to use it for my legal
-                    advices, if it could actually help me.`,
+    testimonialBody3: ` — Definitivno. Ja bih bio prvi koji bi ga koristio za svoje pravne
+                     savjete, ako bi mi zaista mogli pomoći.`,
     testimonialName3: "Mackic Ale",
 
     //COntact form block
-    contactTitle: `Want to get early access to our product?`,
-    contactSubtitle: `Leave your name and email here!`,
-    contactButton: "Send",
-    contactPlaceholderName: "Your name",
-    contactPlaceholderEmail: "Your best email",
+    contactTitle: `Zelite li biti medju nasim prvim korisnicima?`,
+    contactSubtitle: `Unesite vase podatke i ostalo prepustite nama`,
+    contactButton: "Posalji",
+    contactPlaceholderName: "Vase ime",
+    contactPlaceholderEmail: "Najbolji e-mail",
 
-    inputErrorName: "Name is required",
-    inputErrorEmail: '"Email format is not correct',
+    inputErrorName: "Ime je obavezno",
+    inputErrorEmail: "Email nije validan",
 
     contactSuccessMessage:
-      "Message succesfully sent! We will get back to you soon",
-    contactFailedMessage: "Sorry, there was an error. Please try again.",
+      "Uspjesno poslano! Ocekujte povratne informacije uskoro",
+    contactFailedMessage: "Izvinjavamo se, doslo je do greske.",
   },
 });
+
+strings.setLanguage("bh");

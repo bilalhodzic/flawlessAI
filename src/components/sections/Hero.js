@@ -119,7 +119,7 @@ const Hero = ({
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
-            video="https://drive.google.com/file/d/1ipWSlvUsjZOD55UGZ7lzP4-InOCEnIR2/preview"
+            video="https://www.youtube.com/embed/Uq_4o0RyMrg"
             videoTag="iframe"
           />
         </div>
@@ -127,6 +127,8 @@ const Hero = ({
     </section>
   );
 };
+
+//<iframe width="560" height="315" src="https://www.youtube.com/embed/Uq_4o0RyMrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Hero.propTypes = propTypes;
 Hero.defaultProps = defaultProps;

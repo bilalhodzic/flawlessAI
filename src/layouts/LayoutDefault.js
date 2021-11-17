@@ -4,7 +4,7 @@ import Footer from "../components/layout/Footer";
 import { strings } from "../utils/localization";
 
 const LayoutDefault = ({ children }) => {
-  const [language, setlanguage] = React.useState("en");
+  const [language, setlanguage] = React.useState("bh");
 
   const changeLang = (value) => {
     setlanguage(value);

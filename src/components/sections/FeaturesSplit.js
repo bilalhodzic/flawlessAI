@@ -75,7 +75,7 @@ const FeaturesSplit = ({
                   <ColorDot color="#78909C" marginLeft="1rem" />{" "}
                   {strings.researchItem1Dot2}
                   <ColorDot color="#85d5e6" marginLeft="1rem" />{" "}
-                  {strings.researchItem1Dot2}
+                  {strings.researchItem1Dot3}
                 </p>
               </div>
               <div
