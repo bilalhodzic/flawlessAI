@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { Link } from "react-router-dom";
 import Logo from "./partials/Logo";
 import Image from "../elements/Image";
+import { useHistory } from "react-router";
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -81,6 +82,7 @@ const Header = ({
     bottomOuterDivider && "has-bottom-divider",
     className
   );
+  const history = useHistory();
 
   return (
     <header {...props} className={classes}>
@@ -116,9 +118,15 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <a href="#features">{strings.headerFeatures}</a>
+                      <a
+                        href="#features"
+                        onClick={() => history.push("/#features")}
+                      >
+                        {strings.headerFeatures}
+                      </a>
                     </li>
                   </ul>
+                  {/* RESEARCH */}
                   <ul
                     className={classNames(
                       "list-reset text-xs",
@@ -126,9 +134,15 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <a href="#research">{strings.headerResearch}</a>
+                      <a
+                        href="#research"
+                        onClick={() => history.push("/#research")}
+                      >
+                        {strings.headerResearch}
+                      </a>
                     </li>
                   </ul>
+                  {/* TEAM */}
                   <ul
                     className={classNames(
                       "list-reset text-xs",
@@ -136,9 +150,12 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <a href="#team">{strings.headerTeam}</a>
+                      <a href="#team" onClick={() => history.push("/#team")}>
+                        {strings.headerTeam}
+                      </a>
                     </li>
                   </ul>{" "}
+                  {/* BLOGS */}
                   <ul
                     className={classNames(
                       "list-reset text-xs",
@@ -146,7 +163,25 @@ const Header = ({
                     )}
                   >
                     <li>
-                      <a href="#contact">{strings.headerContact}</a>
+                      <a href="#blogs" onClick={() => history.push("/#blogs")}>
+                        {strings.headerBlogs}
+                      </a>
+                    </li>
+                  </ul>
+                  {/* CONTACT */}
+                  <ul
+                    className={classNames(
+                      "list-reset text-xs",
+                      navPosition && `header-nav-${navPosition}`
+                    )}
+                  >
+                    <li>
+                      <a
+                        href="#contact"
+                        onClick={() => history.push("/#contact")}
+                      >
+                        {strings.headerContact}
+                      </a>
                     </li>
                   </ul>
                   {!hideSignin && (

@@ -20,7 +20,7 @@ const Home = (props) => {
         id="research"
       />
       <Team topDivider id="team" />
-      <Testimonial topDivider />
+      <Testimonial topDivider id="blogs" />
       <Cta split invertColor id="contact" />
     </>
   );

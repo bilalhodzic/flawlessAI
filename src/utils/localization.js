@@ -7,6 +7,7 @@ export const strings = new LocalizedStrings({
     headerTeam: "Team",
     headerResearch: "Research",
     headerFeatures: "What we offer",
+    headerBlogs: "Blogs",
 
     //hero
     heroSubTitle:
@@ -80,12 +81,14 @@ export const strings = new LocalizedStrings({
     TeamBilalOpis: `Tech Lead`,
 
     //Customer testimonials block
-    blockTitle4: "Customer testimonials",
-    blockParagpraph4: "Here are some customer testimonial for our product.",
+    blockTitle4: "Blogs",
+    blockParagpraph4:
+      "In our blogs we try to explain legal things understandable to everyone through some popular example",
 
-    testimonialBody1: `— I would use an application that is based on artificial
-                    intelligence, of course, if it were on the market`,
-    testimonialName1: "Blitva Jela",
+    testimonialBody1: `Ukoliko čitate ovaj blog sigurno ste jedna od 142 miliona osoba koja je pogledala TV seriju Squid Game. Za one koji do sada nisu pogledali seriju, a znamo da je takvih izuzetno malo, riječ je o Južnokorejskoj drami koju je kreirao  Hwang Dong-hyuk za Netflix...`,
+    testimonialName1: "See more",
+    testimonialTitle1:
+      "Da li bi Squid Game mogao biti legalan u realnom zivotu?",
 
     testimonialBody2: ` — You have no idea how much backed-up cases there are.
                     Cutting down on the time required on case by case basis
@@ -122,6 +125,7 @@ export const strings = new LocalizedStrings({
     headerTeam: "Nas tim",
     headerResearch: "Istrazivanje",
     headerFeatures: "Sta nudimo",
+    headerBlogs: "Blogovi",
 
     //hero
     heroSubTitle:
@@ -193,25 +197,27 @@ export const strings = new LocalizedStrings({
     TeamBilalOpis: `Tech Lead`,
 
     //Customer testimonials block
-    blockTitle4: "Izjave korisnika",
-    blockParagpraph4: "Evo nekoliko izjava kupaca za naš proizvod",
+    blockTitle4: "Blogovi",
+    blockParagpraph4:
+      "U nasim blogovima pokusavamo kroz neki popularan primjer objasniti pravne stvari razumljive za sve",
 
-    testimonialBody1: `— Koristio bih aplikaciju koja je bazirana na umjetnoj
-                     inteligenciji naravno, ako je na tržištu`,
-    testimonialName1: "Blitva Jela",
+    testimonialBody1: `Ukoliko čitate ovaj blog sigurno ste jedna od 142 miliona osoba koja je pogledala TV seriju Squid Game. Za one koji do sada nisu pogledali seriju, a znamo da je takvih izuzetno malo, riječ je o Južnokorejskoj drami koju je kreirao  Hwang Dong-hyuk za Netflix...`,
+    testimonialName1: "Procitaj vise",
+    testimonialTitle1:
+      "Da li bi Squid Game mogao biti legalan u realnom zivotu?",
 
-    testimonialBody2: ` — Nemate pojma koliko ima istih slučajeva.
-                     Smanjenje potrebnog vremena od slučaja do slučaja
-                     bi nam omogućilo da mnoge slučajeve sklonimo sa liste čekanja.`,
-    testimonialName2: "Zdravko Dren",
+    // testimonialBody2: ` — Nemate pojma koliko ima istih slučajeva.
+    //                  Smanjenje potrebnog vremena od slučaja do slučaja
+    //                  bi nam omogućilo da mnoge slučajeve sklonimo sa liste čekanja.`,
+    // testimonialName2: "Zdravko Dren",
 
-    testimonialBody3: ` — Definitivno. Ja bih bio prvi koji bi ga koristio za svoje pravne
-                     savjete, ako bi mi zaista mogli pomoći.`,
-    testimonialName3: "Mackic Ale",
+    // testimonialBody3: ` — Definitivno. Ja bih bio prvi koji bi ga koristio za svoje pravne
+    //                  savjete, ako bi mi zaista mogli pomoći.`,
+    // testimonialName3: "Mackic Ale",
 
     //COntact form block
     contactTitle: `Zelite li biti medju nasim prvim korisnicima?`,
-    contactSubtitle: `Unesite vase podatke i ostalo prepustite nama`,
+    contactSubtitle: `Unesite vase podatke i ostalo prepustite nama!`,
     contactButton: "Posalji",
     contactPlaceholderName: "Vase ime",
     contactPlaceholderEmail: "Najbolji e-mail",
