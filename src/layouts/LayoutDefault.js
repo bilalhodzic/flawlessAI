@@ -32,7 +32,7 @@ const LayoutDefault = ({ children }) => {
       </main>
       <div
         className="app-chatbot-container"
-        style={{ height: `${showBot ? "55%" : "auto"}` }}
+        style={{ height: `${showBot ? "28em" : "auto"}` }}
       >
         {showBot && (
           <Chatbot

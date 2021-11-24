@@ -8,16 +8,18 @@
   z-index: 9999;
   box-shadow: 5px 5px 13px rgba(91, 81, 81, 0.4);
   border-radius: 5px;
-  width: 25%;
+  width: 17em;
   min-width: 300px;
   background-color: get-color(light, 1);
+  border-radius: 20px;
+  // height: 55%;
 }
 
-@include media("<=medium") {
-  .app-chatbot-container {
-    width: auto;
-  }
-}
+// @include media("<=medium") {
+//   .app-chatbot-container {
+//     width: auto;
+//   }
+// }
 
 .app-chatbot-button {
   width: 50px;
@@ -85,11 +87,6 @@
 .react-chatbot-kit-chat-input-form {
   display: flex;
   width: 100%;
-}
-
-.app-chatbot-container {
-  border-radius: 20px;
-  height: 55%;
 }
 
 .react-chatbot-kit-chat-container {
