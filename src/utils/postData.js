@@ -2,7 +2,7 @@
 
 import axios from "axios";
 
-const BASE_URL = "http://enzzza-dev.site/api/v1";
+const BASE_URL = "https://enzzza-dev.site/api/v1";
 
 const postData = async (url, data) =>
   new Promise(async (resolve, reject) => {
