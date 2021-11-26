@@ -4,9 +4,14 @@ class MessageParser {
     this.state = state;
   }
 
-  async parse(message) {
-    console.log(message);
-    this.actionProvider.handleMessage(message);
+  parse(message) {
+    console.log("🚀 ~ this.state", this.state);
+    if (this.state.contractInProgress) {
+      this.actionProvider.handleContract(message);
+    } else {
+      console.log(message);
+      this.actionProvider.handleMessage(message);
+    }
   }
 }
 

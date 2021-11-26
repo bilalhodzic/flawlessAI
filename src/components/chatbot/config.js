@@ -1,8 +1,22 @@
 import React from "react";
 import { createChatBotMessage } from "react-chatbot-kit";
 import { ReactComponent as BotIcon } from "../../assets/images/bot.svg";
+import Contract from "./Contract";
 
 const botName = "Ena";
+
+const defaultContractData = {
+  adresa_poslodavca: "",
+  ime_kompanije: "",
+  ime_poslodavca: "",
+  adresa_radnika: "",
+  ime_radnika: "",
+  jmbg: "",
+  datum_ugovora: "",
+  mjesto_ugovora: "",
+  datum: "",
+  grad: "",
+};
 
 const config = {
   botName: botName,
@@ -18,7 +32,10 @@ const config = {
     ),
   ],
   state: {
-    gist: "",
+    contractInProgress: false,
+    currentContractQuestion: "",
+
+    contractData: { ...defaultContractData },
   },
   customComponents: {
     header: () => (
@@ -71,23 +88,16 @@ const config = {
     userAvatar: () => <></>,
   },
 
-  //   widgets: [
-  //     {
-  //       widgetName: "overview",
-  //       widgetFunc: (props) => <Overview {...props} />,
-  //       mapStateToProps: ["gist"],
-  //     },
-  //     {
-  //       widgetName: "messageParser",
-  //       widgetFunc: (props) => <MessageParser {...props} />,
-  //       mapStateToProps: ["gist"],
-  //     },
-  //     {
-  //       widgetName: "actionProviderDocs",
-  //       widgetFunc: (props) => <ActionProviderDocs {...props} />,
-  //       mapStateToProps: ["gist"],
-  //     },
-  //   ],
+  widgets: [
+    {
+      widgetName: "contract",
+      widgetFunc: (props) => (
+        <Contract {...props} defaultContractData={defaultContractData} />
+      ),
+
+      mapStateToProps: ["contractData", "contractInProgress"],
+    },
+  ],
 };
 
 export default config;

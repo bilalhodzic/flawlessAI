@@ -17,6 +17,17 @@ const LayoutDefault = ({ children }) => {
     setlanguage(value);
     strings.setLanguage(value);
   };
+
+  React.useEffect(() => {
+    scrollToEnd();
+  });
+
+  const scrollToEnd = () => {
+    var chatList = document.getElementsByClassName(
+      "react-chatbot-kit-chat-inner-container"
+    );
+    chatList.scrollTop = chatList.scrollHeight;
+  };
   return (
     <>
       <Header

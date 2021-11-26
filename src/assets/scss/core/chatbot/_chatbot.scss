@@ -98,3 +98,22 @@
   display: flex;
   justify-content: end;
 }
+
+.contractBtn {
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  border-radius: 18px;
+
+  padding: 9px 20px;
+  border: 1px solid gray;
+  margin: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.contractBtn:hover {
+  background-color: get-color(primary, 1);
+  color: white;
+  border: none;
+}
